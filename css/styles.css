@@ -156,6 +156,10 @@ address {
   color: var(--focus-color);
 }
 
+.contact-mail-header:hover::before {
+  background-image: url(../images/email-hover.svg);
+}
+
 .contact-number-header {
   font-weight: 500;
   font-size: 14px;
@@ -181,6 +185,10 @@ address {
 .contact-number-header:hover,
 .contact-number-header:focus {
   color: var(--focus-color);
+}
+
+.contact-number-header:hover::before {
+  background-image: url(../images/tel-hover.svg);
 }
 
 /* -----------------HERO----------------- */
