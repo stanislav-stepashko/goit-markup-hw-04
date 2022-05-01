@@ -660,6 +660,13 @@ margin-right: 30px;
 }
 .portfolio-projects-item {
   outline: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+
+.portfolio-projects-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-projects-item:not(:nth-child(3n)) {
@@ -673,6 +680,7 @@ margin-right: 30px;
 .portfolio-projects-list {
   display: flex;
   flex-wrap: wrap;
+  /* outline: 2px solid teal; */
 }
 
 .portfolio-name-projects {
