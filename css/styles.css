@@ -410,8 +410,8 @@ margin-right: 30px;
 }
 
 .links {
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   /* outline: 2px solid teal; */
 }
 
@@ -481,10 +481,10 @@ margin-right: 30px;
   color: var(--dark-text-color);
 }
 
-.client-logo {
+/* .client-logo {
   width: 106px;
   height: 60px;
-}
+} */
 
 /* .client-logo:hover {
   fill: var(--focus-color);
@@ -583,8 +583,8 @@ margin-right: 30px;
 }
 
 .footer-links {
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   /* outline: 2px solid teal; */
 }
 
