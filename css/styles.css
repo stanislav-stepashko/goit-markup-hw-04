@@ -17,6 +17,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -39,10 +41,13 @@ address {
   --dark-background-color: #2f303a;
   --light-background-color: #F5F4FA;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --heder-border: #ECECEC;
 }
 
-.body {
-  font-family: 'Roboto';
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /* -----------------HEADER----------------- */
@@ -57,9 +62,13 @@ address {
 }
 
 .section {
-  /* margin-top: 94px;
-  margin-bottom: 94px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
   /* outline: 2px solid crimson; */
+}
+
+header {
+  border-bottom: 1px solid var(--heder-border);
 }
 
 .header {
@@ -141,18 +150,7 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--light-text-color);
-}
-
-.contact-mail-header::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/email.svg);
+  vertical-align: middle;
 }
 
 .contact-mail-header:hover,
@@ -160,9 +158,9 @@ address {
   color: var(--focus-color);
 }
 
-.contact-mail-header:hover::before,
-.contact-mail-header:focus::before {
-  background-image: url(../images/email-hover.svg);
+.mail-icon {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .contact-number-header {
@@ -173,18 +171,7 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--light-text-color);
-}
-
-.contact-number-header::before {
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/tel.svg);
+  vertical-align: middle;
 }
 
 .contact-number-header:hover,
@@ -192,9 +179,15 @@ address {
   color: var(--focus-color);
 }
 
-.contact-number-header:hover::before,
-.contact-number-header:focus::before {
-  background-image: url(../images/tel-hover.svg);
+.tel-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.contact-information-item:hover,
+.contact-information-item:focus {
+  color: var(--focus-color);
+  fill: var(--focus-color);
 }
 
 /* -----------------HERO----------------- */
@@ -258,11 +251,6 @@ address {
 }
 
 /* -----------------HERO-BENEFITS----------------- */
-
-.hero-benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .benefits-list {
   display: flex;
@@ -341,7 +329,7 @@ margin-right: 30px;
 /* -----------------DIRECTION-ACTIVITY----------------- */
 
 .direction-activity {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 
 .direction-activity-header {
@@ -365,8 +353,6 @@ margin-right: 30px;
 /* -----------------TEAM----------------- */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--light-background-color);
   /* outline: 2px solid teal; */
 }
@@ -458,8 +444,6 @@ margin-right: 30px;
 /* -----------------CLIENTS----------------- */
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
   /* background-color: var(--light-background-color); */
   /* outline: 2px solid teal; */
 }
@@ -641,11 +625,6 @@ margin-right: 30px;
 
 /* -----------------PARTFOLIO-HERO----------------- */
 
-.portfolio-hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -690,7 +669,6 @@ margin-right: 30px;
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-projects-item {
-  outline: 1px solid #EEEEEE;
   cursor: pointer;
 }
 
@@ -714,14 +692,21 @@ margin-right: 30px;
   /* outline: 2px solid teal; */
 }
 
+.project-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+
 .portfolio-name-projects {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
   padding-bottom: 4px;
-  padding-left: 24px;
   color: var(--dark-text-color);
 }
 
@@ -730,8 +715,6 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  padding-bottom: 20px;
-  padding-left: 24px;
   color: var(--light-text-color);
 }
 
