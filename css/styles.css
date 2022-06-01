@@ -443,11 +443,6 @@ margin-right: 30px;
 
 /* -----------------CLIENTS----------------- */
 
-.clients {
-  /* background-color: var(--light-background-color); */
-  /* outline: 2px solid teal; */
-}
-
 .clients-list {
   display: flex;
   justify-content: space-between;
@@ -473,10 +468,6 @@ margin-right: 30px;
   border: 1px solid var(--focus-color);
 }
 
-/* .clients-list-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .clients-header {
   font-weight: bold;
   font-size: 36px;
@@ -486,15 +477,6 @@ margin-right: 30px;
   margin-bottom: 50px;
   color: var(--dark-text-color);
 }
-
-/* .client-logo {
-  width: 106px;
-  height: 60px;
-} */
-
-/* .client-logo:hover {
-  fill: var(--focus-color);
-} */
 
 /* -----------------FOOTER----------------- */
 
@@ -588,16 +570,6 @@ margin-right: 30px;
   fill: var(--wight-text-color);
 }
 
-.footer-links {
-  /* width: 20px;
-  height: 20px; */
-  /* outline: 2px solid teal; */
-}
-
-/* .footer-links:hover {
-  fill: var(--wight-text-color)
-} */
-
 .footer-social-link-item:hover {
   background-color: var(--focus-color);
   fill: var(--wight-text-color);
@@ -607,7 +579,7 @@ margin-right: 30px;
   margin-right: 10px;
 }
 
-.left {
+.footer-contacts {
   margin-right: 70px;
 }
 
